@@ -53,7 +53,7 @@
             this.LblCurp = new System.Windows.Forms.Label();
             this.TxtCurp = new System.Windows.Forms.TextBox();
             this.LblPhoneNumber = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtPhoneNumber = new System.Windows.Forms.TextBox();
             this.LblBirthPlace = new System.Windows.Forms.Label();
             this.TxtBirthPlace = new System.Windows.Forms.TextBox();
             this.LblBirthDate = new System.Windows.Forms.Label();
@@ -363,14 +363,14 @@
             this.LblPhoneNumber.TabIndex = 24;
             this.LblPhoneNumber.Text = "Numero de telefono";
             // 
-            // textBox1
+            // TxtPhoneNumber
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(452, 120);
-            this.textBox1.MaxLength = 16;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 22);
-            this.textBox1.TabIndex = 25;
+            this.TxtPhoneNumber.BackColor = System.Drawing.Color.Silver;
+            this.TxtPhoneNumber.Location = new System.Drawing.Point(452, 120);
+            this.TxtPhoneNumber.MaxLength = 16;
+            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
+            this.TxtPhoneNumber.Size = new System.Drawing.Size(156, 22);
+            this.TxtPhoneNumber.TabIndex = 25;
             // 
             // LblBirthPlace
             // 
@@ -430,7 +430,7 @@
             this.Controls.Add(this.LblBirthDate);
             this.Controls.Add(this.TxtBirthPlace);
             this.Controls.Add(this.LblBirthPlace);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtPhoneNumber);
             this.Controls.Add(this.LblPhoneNumber);
             this.Controls.Add(this.TxtCurp);
             this.Controls.Add(this.LblCurp);
@@ -490,7 +490,7 @@
         private System.Windows.Forms.Label LblCurp;
         private System.Windows.Forms.TextBox TxtCurp;
         private System.Windows.Forms.Label LblPhoneNumber;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtPhoneNumber;
         private System.Windows.Forms.Label LblBirthPlace;
         private System.Windows.Forms.TextBox TxtBirthPlace;
         private System.Windows.Forms.Label LblBirthDate;
