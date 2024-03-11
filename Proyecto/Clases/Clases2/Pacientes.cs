@@ -40,7 +40,7 @@ namespace Proyecto.Clases.Clases2
         public string Municipality { get; set; }
         public Patient() { }
     }
-    
+
     public class AssignedMedic
     {
         public int ProfessionalLicense { get; set; }
@@ -49,7 +49,7 @@ namespace Proyecto.Clases.Clases2
 
         public AssignedMedic() { }
     }
-    
+
     public class PatientCompanion
     {
         public int Age { get; set; }
@@ -62,8 +62,14 @@ namespace Proyecto.Clases.Clases2
 
         public PatientCompanion() { }
     }
-}
+    public class PatientStatus
+    {
+        public int PatientNumber { get; set; }
+        public string PatientCode { get; set; }
+        public PatientStatus() { }
 
+    }
+}
 
 
     
