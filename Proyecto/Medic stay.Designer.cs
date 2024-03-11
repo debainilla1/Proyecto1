@@ -81,7 +81,7 @@
             this.LblMedicalRecord.Name = "LblMedicalRecord";
             this.LblMedicalRecord.Size = new System.Drawing.Size(120, 16);
             this.LblMedicalRecord.TabIndex = 2;
-            this.LblMedicalRecord.Text = "Historial Medico";
+            this.LblMedicalRecord.Text = "Historial Médico";
             // 
             // LblTypeOfService
             // 
@@ -121,7 +121,7 @@
             this.LblChildBearingAgeWomen.Name = "LblChildBearingAgeWomen";
             this.LblChildBearingAgeWomen.Size = new System.Drawing.Size(131, 20);
             this.LblChildBearingAgeWomen.TabIndex = 6;
-            this.LblChildBearingAgeWomen.Text = "Mujer En Edad Fertil";
+            this.LblChildBearingAgeWomen.Text = "Mujer En Edad Fértil";
             this.LblChildBearingAgeWomen.UseCompatibleTextRendering = true;
             // 
             // LblConditionsTreated
