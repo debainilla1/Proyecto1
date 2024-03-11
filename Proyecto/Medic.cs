@@ -21,5 +21,10 @@ namespace Proyecto
         {
 
         }
+
+        private void LblProfessionalLicense_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

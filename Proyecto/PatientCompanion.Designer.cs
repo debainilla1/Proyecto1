@@ -43,6 +43,8 @@
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.TxtAge = new System.Windows.Forms.TextBox();
             this.TxtGender = new System.Windows.Forms.TextBox();
+            this.LblPatientCompanion = new System.Windows.Forms.Label();
+            this.BttSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblName
@@ -76,7 +78,7 @@
             this.LblPhoneNumber.Name = "LblPhoneNumber";
             this.LblPhoneNumber.Size = new System.Drawing.Size(172, 22);
             this.LblPhoneNumber.TabIndex = 2;
-            this.LblPhoneNumber.Text = "Numero telefonico";
+            this.LblPhoneNumber.Text = "Número telefónico";
             // 
             // LblCellPhoneNumber
             // 
@@ -87,7 +89,7 @@
             this.LblCellPhoneNumber.Name = "LblCellPhoneNumber";
             this.LblCellPhoneNumber.Size = new System.Drawing.Size(173, 22);
             this.LblCellPhoneNumber.TabIndex = 3;
-            this.LblCellPhoneNumber.Text = "Numero de celular";
+            this.LblCellPhoneNumber.Text = "Número de celular";
             this.LblCellPhoneNumber.Click += new System.EventHandler(this.LblCellPhoneNumber_Click);
             // 
             // LblEmail
@@ -121,7 +123,7 @@
             this.LblGender.Name = "LblGender";
             this.LblGender.Size = new System.Drawing.Size(76, 22);
             this.LblGender.TabIndex = 6;
-            this.LblGender.Text = "Genero";
+            this.LblGender.Text = "Género";
             // 
             // TxtName
             // 
@@ -179,6 +181,28 @@
             this.TxtGender.Size = new System.Drawing.Size(357, 22);
             this.TxtGender.TabIndex = 13;
             // 
+            // LblPatientCompanion
+            // 
+            this.LblPatientCompanion.AutoSize = true;
+            this.LblPatientCompanion.BackColor = System.Drawing.Color.Transparent;
+            this.LblPatientCompanion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPatientCompanion.Location = new System.Drawing.Point(254, 46);
+            this.LblPatientCompanion.Name = "LblPatientCompanion";
+            this.LblPatientCompanion.Size = new System.Drawing.Size(303, 22);
+            this.LblPatientCompanion.TabIndex = 14;
+            this.LblPatientCompanion.Text = "Acompañante Legal del Paciente";
+            this.LblPatientCompanion.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // BttSend
+            // 
+            this.BttSend.BackColor = System.Drawing.Color.Silver;
+            this.BttSend.Location = new System.Drawing.Point(689, 472);
+            this.BttSend.Name = "BttSend";
+            this.BttSend.Size = new System.Drawing.Size(133, 28);
+            this.BttSend.TabIndex = 31;
+            this.BttSend.Text = "Enviar";
+            this.BttSend.UseVisualStyleBackColor = false;
+            // 
             // PatientCompanion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,6 +210,8 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(985, 585);
+            this.Controls.Add(this.BttSend);
+            this.Controls.Add(this.LblPatientCompanion);
             this.Controls.Add(this.TxtGender);
             this.Controls.Add(this.TxtAge);
             this.Controls.Add(this.TxtEmail);
@@ -224,5 +250,7 @@
         private System.Windows.Forms.TextBox TxtEmail;
         private System.Windows.Forms.TextBox TxtAge;
         private System.Windows.Forms.TextBox TxtGender;
+        private System.Windows.Forms.Label LblPatientCompanion;
+        private System.Windows.Forms.Button BttSend;
     }
 }
