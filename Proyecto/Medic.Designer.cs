@@ -36,6 +36,7 @@
             this.TxtLastName = new System.Windows.Forms.TextBox();
             this.TxtProfessionalLicense = new System.Windows.Forms.TextBox();
             this.LblDoctorResponsibleForThePatient = new System.Windows.Forms.Label();
+            this.BttSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblName
@@ -67,9 +68,10 @@
             this.LblProfessionalLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProfessionalLicense.Location = new System.Drawing.Point(169, 341);
             this.LblProfessionalLicense.Name = "LblProfessionalLicense";
-            this.LblProfessionalLicense.Size = new System.Drawing.Size(204, 25);
+            this.LblProfessionalLicense.Size = new System.Drawing.Size(195, 25);
             this.LblProfessionalLicense.TabIndex = 2;
-            this.LblProfessionalLicense.Text = "Licencia profesional";
+            this.LblProfessionalLicense.Text = "Cédula Profesional";
+            this.LblProfessionalLicense.Click += new System.EventHandler(this.LblProfessionalLicense_Click);
             // 
             // TxtName
             // 
@@ -105,7 +107,17 @@
             this.LblDoctorResponsibleForThePatient.Name = "LblDoctorResponsibleForThePatient";
             this.LblDoctorResponsibleForThePatient.Size = new System.Drawing.Size(329, 25);
             this.LblDoctorResponsibleForThePatient.TabIndex = 6;
-            this.LblDoctorResponsibleForThePatient.Text = "Medico responsable del paciente";
+            this.LblDoctorResponsibleForThePatient.Text = "Médico responsable del paciente";
+            // 
+            // BttSend
+            // 
+            this.BttSend.BackColor = System.Drawing.Color.Silver;
+            this.BttSend.Location = new System.Drawing.Point(664, 418);
+            this.BttSend.Name = "BttSend";
+            this.BttSend.Size = new System.Drawing.Size(133, 28);
+            this.BttSend.TabIndex = 31;
+            this.BttSend.Text = "Enviar";
+            this.BttSend.UseVisualStyleBackColor = false;
             // 
             // Medic
             // 
@@ -114,6 +126,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1033, 592);
+            this.Controls.Add(this.BttSend);
             this.Controls.Add(this.LblDoctorResponsibleForThePatient);
             this.Controls.Add(this.TxtProfessionalLicense);
             this.Controls.Add(this.TxtLastName);
@@ -138,5 +151,6 @@
         private System.Windows.Forms.TextBox TxtLastName;
         private System.Windows.Forms.TextBox TxtProfessionalLicense;
         private System.Windows.Forms.Label LblDoctorResponsibleForThePatient;
+        private System.Windows.Forms.Button BttSend;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatient));
             this.LblName = new System.Windows.Forms.Label();
             this.TxtFirstName = new System.Windows.Forms.TextBox();
             this.LblLastName = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.BackColor = System.Drawing.SystemColors.Info;
+            this.LblName.BackColor = System.Drawing.Color.White;
             this.LblName.Location = new System.Drawing.Point(12, 23);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(56, 16);
@@ -107,7 +108,7 @@
             this.LblGender.Name = "LblGender";
             this.LblGender.Size = new System.Drawing.Size(52, 16);
             this.LblGender.TabIndex = 4;
-            this.LblGender.Text = "Genero";
+            this.LblGender.Text = "Género";
             // 
             // CmbGender
             // 
@@ -283,14 +284,14 @@
             this.LblWeight.BackColor = System.Drawing.SystemColors.Info;
             this.LblWeight.Location = new System.Drawing.Point(12, 293);
             this.LblWeight.Name = "LblWeight";
-            this.LblWeight.Size = new System.Drawing.Size(39, 16);
+            this.LblWeight.Size = new System.Drawing.Size(68, 16);
             this.LblWeight.TabIndex = 16;
-            this.LblWeight.Text = "Peso";
+            this.LblWeight.Text = "Peso (KG)";
             // 
             // TxtWeight
             // 
             this.TxtWeight.BackColor = System.Drawing.Color.Silver;
-            this.TxtWeight.Location = new System.Drawing.Point(57, 290);
+            this.TxtWeight.Location = new System.Drawing.Point(94, 293);
             this.TxtWeight.MaxLength = 6;
             this.TxtWeight.Name = "TxtWeight";
             this.TxtWeight.Size = new System.Drawing.Size(49, 22);
@@ -300,11 +301,12 @@
             // 
             this.LblSocialSecurityNumber.AutoSize = true;
             this.LblSocialSecurityNumber.BackColor = System.Drawing.SystemColors.Info;
-            this.LblSocialSecurityNumber.Location = new System.Drawing.Point(321, 56);
+            this.LblSocialSecurityNumber.Location = new System.Drawing.Point(321, 53);
             this.LblSocialSecurityNumber.Name = "LblSocialSecurityNumber";
             this.LblSocialSecurityNumber.Size = new System.Drawing.Size(158, 16);
             this.LblSocialSecurityNumber.TabIndex = 18;
-            this.LblSocialSecurityNumber.Text = "Numero de seguro social";
+            this.LblSocialSecurityNumber.Text = "Número de seguro social";
+            this.LblSocialSecurityNumber.Click += new System.EventHandler(this.LblSocialSecurityNumber_Click);
             // 
             // LblZipCode
             // 
@@ -314,7 +316,7 @@
             this.LblZipCode.Name = "LblZipCode";
             this.LblZipCode.Size = new System.Drawing.Size(92, 16);
             this.LblZipCode.TabIndex = 19;
-            this.LblZipCode.Text = "Codigo Postal";
+            this.LblZipCode.Text = "Código Postal";
             // 
             // TxtZipCode
             // 
@@ -361,7 +363,7 @@
             this.LblPhoneNumber.Name = "LblPhoneNumber";
             this.LblPhoneNumber.Size = new System.Drawing.Size(125, 16);
             this.LblPhoneNumber.TabIndex = 24;
-            this.LblPhoneNumber.Text = "Numero de telefono";
+            this.LblPhoneNumber.Text = "Número de telefono";
             // 
             // TxtPhoneNumber
             // 
@@ -408,6 +410,7 @@
             this.DtpBirthDate.Name = "DtpBirthDate";
             this.DtpBirthDate.Size = new System.Drawing.Size(307, 22);
             this.DtpBirthDate.TabIndex = 29;
+            this.DtpBirthDate.ValueChanged += new System.EventHandler(this.DtpBirthDate_ValueChanged);
             // 
             // BttSend
             // 
@@ -423,7 +426,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Proyecto.Properties.Resources.hospital_para_el_niño_poblano;
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(969, 497);
             this.Controls.Add(this.BttSend);
             this.Controls.Add(this.DtpBirthDate);

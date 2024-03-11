@@ -16,5 +16,15 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void DtpBirthDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblSocialSecurityNumber_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
