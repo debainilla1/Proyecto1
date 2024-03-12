@@ -9,6 +9,7 @@ namespace Proyecto.Clases.Clases2
     public class MedicStay
     {
         public int ChildBearingAgeWoman { get; set; }
+        public int ID {  get; set; }
         public DateTime DateOfEntry { get; set; }
         public DateTime DateOfDischarge { get; set; }
         public string MedicalRecord { get; set; }
@@ -24,6 +25,7 @@ namespace Proyecto.Clases.Clases2
     public class Patient
     {
         public int SocialSecuritynumber { get; set; }
+        public int ID { get; set; }
         public int MaritalStatus { get; set; }
         public int Weight { get; set; }
         public int ZipCode { get; set; }
@@ -44,6 +46,7 @@ namespace Proyecto.Clases.Clases2
     public class AssignedMedic
     {
         public int ProfessionalLicense { get; set; }
+        public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
@@ -53,6 +56,7 @@ namespace Proyecto.Clases.Clases2
     public class PatientCompanion
     {
         public int Age { get; set; }
+        public int ID { get; set; }
         public Boolean Gender { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -65,6 +69,7 @@ namespace Proyecto.Clases.Clases2
     public class PatientStatus
     {
         public int PatientNumber { get; set; }
+        public int ID { get; set; }
         public string PatientCode { get; set; }
         public PatientStatus() { }
 

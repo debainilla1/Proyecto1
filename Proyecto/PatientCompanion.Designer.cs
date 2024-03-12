@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientCompanion));
             this.LblName = new System.Windows.Forms.Label();
             this.LblLastName = new System.Windows.Forms.Label();
             this.LblPhoneNumber = new System.Windows.Forms.Label();
@@ -185,10 +184,10 @@
             // 
             this.LblPatientCompanion.AutoSize = true;
             this.LblPatientCompanion.BackColor = System.Drawing.Color.Transparent;
-            this.LblPatientCompanion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPatientCompanion.Location = new System.Drawing.Point(254, 46);
+            this.LblPatientCompanion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPatientCompanion.Location = new System.Drawing.Point(270, 35);
             this.LblPatientCompanion.Name = "LblPatientCompanion";
-            this.LblPatientCompanion.Size = new System.Drawing.Size(303, 22);
+            this.LblPatientCompanion.Size = new System.Drawing.Size(396, 29);
             this.LblPatientCompanion.TabIndex = 14;
             this.LblPatientCompanion.Text = "Acompañante Legal del Paciente";
             this.LblPatientCompanion.Click += new System.EventHandler(this.label1_Click);
@@ -207,8 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(985, 585);
             this.Controls.Add(this.BttSend);
             this.Controls.Add(this.LblPatientCompanion);
