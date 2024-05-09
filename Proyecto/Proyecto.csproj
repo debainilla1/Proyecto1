@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Clases2\AssignedMedic.cs" />
     <Compile Include="Clases\Clases2\MedicStay.cs" />
     <Compile Include="Clases\Clases2\Pacientes.cs" />
     <Compile Include="ActualizationPatient.cs">
@@ -54,6 +55,9 @@
     <Compile Include="ActualizationPatient.Designer.cs">
       <DependentUpon>ActualizationPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\Clases2\Patient.cs" />
+    <Compile Include="Clases\Clases2\PatientCompanion.cs" />
+    <Compile Include="Clases\Clases2\PatientStatus.cs" />
     <Compile Include="FormsPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
